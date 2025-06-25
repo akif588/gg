@@ -1,2 +1,4 @@
-console.loh("Helo World")
+console.log("Helo World")
 alert("selam")
+prompt("selam")
+
