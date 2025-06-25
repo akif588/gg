@@ -1,1 +1,2 @@
-console.error("Helo World")
+console.loh("Helo World")
+alert("selam")
