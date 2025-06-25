@@ -1,59 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head> <script src="V1.js">// script.js
-
-// Çıktının gösterileceği HTML elementini seç
-const outputConsole = document.getElementById('output-console');
-
-/**
- * Sayfadaki özel bir alana mesaj yazdırır.
- * @param {string} message - Yazdırılacak mesaj.
- * @param {string} type - Mesajın tipi (opsiyonel: 'info', 'warn', 'error').
- */
-function logToPage(message, type = 'info') {
-    if (!outputConsole) {
-        console.error('Hata: output-console ID\'sine sahip bir element bulunamadı.');
-        return;
-    }
-
-    const messageElement = document.createElement('div');
-    messageElement.classList.add('console-message'); // Tüm mesajlara temel sınıf ekle
-
-    // Mesaj tipine göre sınıf ekle
-    if (type === 'warn') {
-        messageElement.classList.add('warn');
-    } else if (type === 'error') {
-        messageElement.classList.add('error');
-    } else {
-        messageElement.classList.add('info'); // Varsayılan olarak bilgi
-    }
-
-    messageElement.textContent = message; // Mesajı div'in içine yaz
-
-    outputConsole.appendChild(messageElement); // Mesajı konsol div'ine ekle
-    // En yeni mesajın görünmesi için otomatik aşağı kaydır
-    outputConsole.scrollTop = outputConsole.scrollHeight;
-}
-
-// Örnek kullanımlar:
-logToPage("Merhaba, bu HTML sayfasındaki bir JavaScript çıktısıdır!");
-logToPage("Bu bir başka bilgi mesajıdır.", "info");
-logToPage("Dikkat! Bu bir uyarı mesajıdır.", "warn");
-logToPage("Hata! Bir şeyler yanlış gitti.", "error");
-
-// Değişken ve hesaplama çıktısı
-const userName = "Kullanıcı123";
-logToPage(`Kullanıcı adı: ${userName}`);
-logToPage(`Toplama sonucu: ${15 + 7}`);
-
-// Belirli bir süre sonra mesaj gösterme
-setTimeout(() => {
-    logToPage("2 saniye sonra gösterilen mesaj.");
-}, 2000); // 2000 milisaniye = 2 saniye
+<head> <script src="V1.js">
 </script>
 <link rel="stylesheet" href="V1.css">
 </head>
 <body>
     <p>"Java script öğrenme part 1"</p>
 </body>
-</html>
+</h
